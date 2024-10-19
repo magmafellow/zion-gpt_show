@@ -1,0 +1,28 @@
+
+.footer {
+  background-color: #f6f6f6;
+  
+  &__container {
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left {
+
+    &-first {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__right {
+    
+    &-produced {
+      font-weight: 700;
+      color: rgb(73, 180, 242);
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+  }
+}

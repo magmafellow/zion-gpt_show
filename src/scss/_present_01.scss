@@ -1,0 +1,153 @@
+@use './util/_variables' as *;
+
+.present {
+  &__container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 14px;
+    font-size: 114px;
+    font-weight: 700;
+    color: $pr-text;
+  }
+  &__text {
+    margin-bottom: 19px;
+    font-size: 21px;
+    font-weight: 500;
+  }
+
+  &__linner {
+    flex: 0 1 50%;
+  }
+  &__rinner {
+    flex: 0 1 50%;
+    padding: 18px 0px;
+  }
+
+  &__link-box {
+    gap: 19px;
+  }
+  &__link-box_stat-box {
+    gap: 18px;
+  }
+}
+
+.present-rinner {
+  &__img-wrapper {
+    height: 300px;
+  }
+  &__img-wrapper-img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+  }
+}
+
+// free components
+
+.link-box {
+  display: flex;
+
+  &__stat-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__bookmark {
+    gap: 3px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  &__btn {
+    padding: 9px 18px;
+    display: flex;
+    align-items: center;
+    font-size: 13.5px;
+    font-weight: 600;
+    gap: 9px;
+    border-radius: 3px;
+    border: 1px solid #b1b1b1;
+    transition: 0.27s;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #b1b1b13c;
+    }
+  }
+}
+
+.cont-3col {
+  display: flex;
+}
+
+// media queries
+// double extra large (double xl)
+@media screen and (max-width: 1139px) {
+  .present {
+    &__title {
+      font-size: 90px;
+    }
+  }
+}
+// large (desktops)
+@media screen and (max-width: 1023px) {
+  .present {
+    &__container {
+      flex-flow: column nowrap;
+    }
+    &__title {
+      text-align: center;
+      font-size: 80px;
+    }
+    &__text {
+      text-align: center;
+    }
+    &__link-box {
+      flex-flow: column nowrap;
+      align-items: center;
+    }
+  }
+
+  .present-rinner {
+    &__img-wrapper {
+      height: 260px;
+    }
+  }
+
+  .link-box {
+    &__btn {
+      font-size: 18px;
+    }
+  }
+}
+// medium (laptops)
+@media screen and (max-width: 767px) {
+  .present {
+    &__title {
+      font-size: 64px;
+    }
+    &__text {
+      font-size: 18px;
+    }
+  }
+
+  .present-rinner {
+    &__img-wrapper {
+      height: 252px;
+    }
+  }
+
+  .link-box {
+    &__bookmark {
+      font-size: 14px;
+    }
+  }
+}
+// small (tablets)
+@media screen and (max-width: 639px) {
+}

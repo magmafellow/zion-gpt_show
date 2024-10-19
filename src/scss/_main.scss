@@ -1,0 +1,23 @@
+
+.main {
+  margin-bottom: 24px;
+ 
+  &__popup-trigger {
+    background-color: orangered;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.23s;
+
+    &:hover {
+      background-color: orange;
+    }
+  }
+}
+
+.box-popup {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
